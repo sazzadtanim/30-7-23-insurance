@@ -1,0 +1,16 @@
+<svg
+
+						width='907'
+						height='87'
+						viewBox='0 0 907 87'
+						fill='none'
+						xmlns='http://www.w3.org/2000/svg'
+						className='w-[907px] h-[87px]'
+						preserveAspectRatio='none'
+					>
+						<path
+							d='M0 27C0 15.9543 8.95431 7 20 7H893V67C893 78.0457 884.046 87 873 87H20C8.95433 87 0 78.0457 0 67V27Z'
+							fill='#6DB8F2'
+						></path>
+						<path d='M893 28L880.876 7L905.124 7L893 28Z' fill='#6DB8F2'></path>
+					</svg>
