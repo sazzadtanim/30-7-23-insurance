@@ -24,7 +24,7 @@ export default function InsideMenu(): JSX.Element {
     {
       title: 'Insight DLT Recorder',
       Icon: InsightIcon,
-      link: '/my_files',
+      link: '/insight_dlt_recorder',
       state: 'Active',
     },
     {
@@ -63,23 +63,28 @@ function Insider(props: {
   Icon: StaticImageData
 }) {
   const linkStyles = {
-    Active: 'border-l-2 border-black bg-blue-300/20',
+    base: 'flex items-center justify-start gap-3 rounded-r-md px-4 py-3 hover:bg-blue-300/10 border-l-2',
+    Active: ' border-black bg-blue-300/20',
     Inactive: 'bg-white',
+  }
+
+  const titleStyles = {
+    base: 'whitespace-nowrap font-lato text-lg font-medium capitalize',
+    Active: 'font-semibold',
+    Inactive: '',
   }
 
   return (
     <Link
       href={props.link}
-      className={`flex items-center justify-start gap-3 rounded-r-md px-4  py-3 hover:bg-blue-300/10 ${
-        linkStyles[props.state]
-      }`}
+      className={`${linkStyles['base']} ${linkStyles[props.state]}`}
     >
       <Image
         alt={`icon for ${props.title}`}
         src={props.Icon}
         className=' h-auto w-8 '
       />
-      <span className='whitespace-nowrap font-lato text-lg font-semibold capitalize '>
+      <span className={`${titleStyles['base']} ${titleStyles[props.state]}`}>
         {props.title}
       </span>
     </Link>
