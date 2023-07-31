@@ -7,32 +7,32 @@ export default function DocumentList() {
       <DocumentDetails
         description={`Este documento detalla los términos y condiciones del seguro de automóvil proporcionado por Mapfre. Cubre aspectos como...`}
         title={`Terminos_y_Condiciones_Seguro_Automovil_Mapfre.pdf`}
-        usedAs='activeHistory'
+        used_as='activeHistory'
       />
       <DocumentDetails
         description={`Este documento detalla los términos y condiciones del seguro de automóvil proporcionado por Mapfre. Cubre aspectos como...`}
         title={`Terminos_y_Condiciones_Seguro_Automovil_Mapfre.pdf`}
-        usedAs='inactiveHistory'
+        used_as='inactiveHistory'
       />
       <DocumentDetails
         description={`Este documento detalla los términos y condiciones del seguro de automóvil proporcionado por Mapfre. Cubre aspectos como...`}
         title={`Terminos_y_Condiciones_Seguro_Automovil_Mapfre.pdf`}
-        usedAs='inactiveHistory'
+        used_as='inactiveHistory'
       />
       <DocumentDetails
         description={`Este documento detalla los términos y condiciones del seguro de automóvil proporcionado por Mapfre. Cubre aspectos como...`}
         title={`Terminos_y_Condiciones_Seguro_Automovil_Mapfre.pdf`}
-        usedAs='inactiveHistory'
+        used_as='inactiveHistory'
       />
       <DocumentDetails
         description={`Este documento detalla los términos y condiciones del seguro de automóvil proporcionado por Mapfre. Cubre aspectos como...`}
         title={`Terminos_y_Condiciones_Seguro_Automovil_Mapfre.pdf`}
-        usedAs='inactiveHistory'
+        used_as='inactiveHistory'
       />
       <DocumentDetails
         description={`Este documento detalla los términos y condiciones del seguro de automóvil proporcionado por Mapfre. Cubre aspectos como...`}
         title={`Terminos_y_Condiciones_Seguro_Automovil_Mapfre.pdf`}
-        usedAs='inactiveHistory'
+        used_as='inactiveHistory'
       />
     </div>
   )

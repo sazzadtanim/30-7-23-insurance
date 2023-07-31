@@ -6,7 +6,7 @@ import Image from 'next/image'
 export interface DocumentHistoryProps {
   title: string
   description: string
-  usedAs: 'header' | 'inactiveHistory' | 'activeHistory'
+  used_as: 'header' | 'inactiveHistory' | 'activeHistory'
 }
 
 //* tailwindcss recommended way https://tailwindcss.com/docs/content-configuration
@@ -33,18 +33,21 @@ const descriptionStyles = {
 
 export default function DocumentDetails(props: DocumentHistoryProps) {
   return (
-    <div className={`${divStyles['base']} ${divStyles[props.usedAs]}`}>
-      {props.usedAs === 'header' || props.usedAs === 'activeHistory' ? (
+    <div
+      className={`${divStyles['base']} ${divStyles[props.used_as]}`}
+      title={props.title}
+    >
+      {props.used_as === 'header' || props.used_as === 'activeHistory' ? (
         <Image alt='pdf icon' src={PdfBlue} />
       ) : (
         <Image alt='pdf icon' src={PdfWhite} />
       )}
 
       <div className='flex max-w-[382px] flex-col gap-2'>
-        <p className={`${titleStyles['base']} ${titleStyles[props.usedAs]}`}>
+        <p className={`${titleStyles['base']} ${titleStyles[props.used_as]}`}>
           {props.title}
         </p>
-        <p className={`${descriptionStyles[props.usedAs]}`}>
+        <p className={`${descriptionStyles[props.used_as]}`}>
           {props.description}
         </p>
       </div>
