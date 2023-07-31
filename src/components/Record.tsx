@@ -1,10 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-interface RecordInterface {
+export interface RecordInterface {
   date: string
   time: string
-  button_name: string
   text: string
   datas: Data[]
 }
@@ -18,10 +17,12 @@ interface Data {
 export default function Record(props: RecordInterface) {
   return (
     <div title='DLT record'>
+      <input type='checkbox' name='' id='' />
+      <button type='button'>Validate</button>
       <div>
-        <p>{props.date}</p>
-        <p>{props.time}</p>
-        <p>Find Similar</p>
+        <p>
+          {props.date} {props.time} Find Similar
+        </p>
         {/* Three dot icon  */}
         {/* <Image /> */}
       </div>
