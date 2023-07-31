@@ -24,9 +24,24 @@ const records: RecordInterface[] = [
     date: '2023-06-06​',
     datas: [
       {
-        percentage: 26539,
+        percentage: 26.539,
         status: 'inactive',
         title: 'Rehusado  por dis...',
+      },
+      {
+        percentage: 2.091,
+        status: 'inactive',
+        title: 'No cobertura',
+      },
+      {
+        percentage: 23.973,
+        status: 'inactive',
+        title: 'No cubierto',
+      },
+      {
+        percentage: 47.399,
+        status: 'inactive',
+        title: 'Cubierto',
       },
     ],
     text: `Nuestro seguro, al salir del estacionamiento en reversa, golpea al vehículo contrario, provocándole daños
