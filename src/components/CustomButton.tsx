@@ -14,7 +14,7 @@ export default function CustomButton(props: {
         id=''
         className={`absolute inset-0 opacity-0`}
       />
-      <p className='rounded-xl bg-blue-400 px-10 py-2 text-white'>
+      <p className='rounded-xl bg-blue-300 px-10 py-2 text-white'>
         {props.name}
       </p>
     </div>
